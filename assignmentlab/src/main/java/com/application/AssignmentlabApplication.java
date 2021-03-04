@@ -1,0 +1,13 @@
+package com.application;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AssignmentlabApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AssignmentlabApplication.class, args);
+	}
+
+}

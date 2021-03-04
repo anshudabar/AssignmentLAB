@@ -1,0 +1,5 @@
+package com.application.model.dao;
+
+public class Department {
+
+}

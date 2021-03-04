@@ -1,0 +1,15 @@
+package com.application.model.dao;
+
+import java.util.Date;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="project")
+public class Project {
+	private String projectName;
+
+	private Date startDate;
+
+	private String managerName;
+}

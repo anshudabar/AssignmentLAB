@@ -1,0 +1,11 @@
+package com.application.model.dao;
+
+import java.util.Date;
+
+public class Project {
+	private String projectName;
+
+	private Date startDate;
+
+	private String managerName;
+}

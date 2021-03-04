@@ -1,0 +1,51 @@
+package com.application.model.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="department")
+public class Department {
+	@Id 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int did;
+
+	private String dname;
+
+	private List<Employee> employees = new ArrayList<>();
+
+	public Department() {}
+
+	public Department(int did, String dname, List<Employee> employees) {
+		this.did = did;
+		this.dname = dname;
+		this.employees = employees;
+	}
+
+	public int getDid() {
+		return did;
+	}
+
+	public void setDid(int did) {
+		this.did = did;
+	}
+
+	public String getDname() {
+		return dname;
+	}
+
+	public void setDname(String dname) {
+		this.dname = dname;
+	}
+
+	public List<Employee> getEmployees() {
+		return employees;
+	}
+
+	public void setEmployees(List<Employee> employees) {
+		this.employees = employees;
+	}
+
+}

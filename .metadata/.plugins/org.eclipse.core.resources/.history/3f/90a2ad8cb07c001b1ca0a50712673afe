@@ -1,0 +1,18 @@
+package com.application.model.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="department")
+public class Department {
+	@Id 
+	@GeneratedValue(strategy = GenerationType())
+	private int did;
+
+	private String dname;
+
+	private List<Employee> employees = new ArrayList<>();
+}
